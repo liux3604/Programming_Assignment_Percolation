@@ -1,4 +1,7 @@
 # Programming_Assignment_Percolation
+
+assignment description can be found at http://coursera.cs.princeton.edu/algs4/assignments/percolation.html
+
 Small programming assignment
 Programming Assignment 1: Percolation
 
