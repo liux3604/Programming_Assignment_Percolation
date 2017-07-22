@@ -48,7 +48,6 @@ Open the site.
 The fraction of sites that are opened when the system percolates provides an estimate of the percolation threshold.
 For example, if sites are opened in a 20-by-20 lattice according to the snapshots below, then our estimate of the percolation threshold is 204/400 = 0.51 because the system percolates when the 204th site is opened.
 
-     	Percolation 50 sites 
 50 open sites
 Percolation 100 sites 
 100 open sites
@@ -58,11 +57,6 @@ Percolation 204 sites
 204 open sites
 By repeating this computation experiment T times and averaging the results, we obtain a more accurate estimate of the percolation threshold. Let xt be the fraction of open sites in computational experiment t. The sample mean x¡¥¡¥¡¥x¡¥ provides an estimate of the percolation threshold; the sample standard deviation s; measures the sharpness of the threshold.
 
-x¡¥¡¥¡¥=x1+x2+?+xTT,s2=(x1?x¡¥¡¥¡¥)2+(x2?x¡¥¡¥¡¥)2+?+(xT?x¡¥¡¥¡¥)2T?1
-x¡¥=x1+x2+?+xTT,s2=(x1?x¡¥)2+(x2?x¡¥)2+?+(xT?x¡¥)2T?1
-Assuming T is sufficiently large (say, at least 30), the following provides a 95% confidence interval for the percolation threshold:
-[x¡¥¡¥¡¥?1.96sT??¡Ì,x¡¥¡¥¡¥+1.96sT??¡Ì]
-[x¡¥?1.96sT,x¡¥+1.96sT]
 To perform a series of computational experiments, create a data type PercolationStats with the following API.
 
 public class PercolationStats {
